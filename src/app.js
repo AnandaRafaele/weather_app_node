@@ -8,7 +8,7 @@ const hbs = require('hbs')
 const request = require('request')
 
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3001
 
 // Define paths for Express config
 const public_directory_path = path.join(__dirname, '../public')
